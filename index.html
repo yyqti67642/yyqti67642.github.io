@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>순천매산고등학교 소개</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f6f5ef;
+      color: #183f35;
+      font-family: Arial, "Malgun Gothic", sans-serif;
+      line-height: 1.8;
+    }
+    header, main, footer {
+      max-width: 900px;
+      margin: auto;
+      padding: 24px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid #d8ded4;
+    }
+    a { color: inherit; }
+    header a { font-size: 14px; }
+    .hero { padding: 60px 0; }
+    .label { font-size: 13px; color: #647568; }
+    h1 {
+      font-size: clamp(34px, 7vw, 56px);
+      line-height: 1.3;
+      letter-spacing: -2px;
+    }
+    h2 { font-size: 26px; }
+    .button {
+      display: inline-block;
+      background: #183f35;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 16px;
+    }
+    section {
+      padding: 28px 0;
+      border-top: 1px solid #d8ded4;
+    }
+    .values {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .value {
+      padding: 20px;
+      background: #e8ecdf;
+      border-radius: 12px;
+    }
+    .value h3 { margin-top: 0; }
+    li { margin-bottom: 12px; }
+    footer { font-size: 12px; color: #647568; }
+    a:focus-visible {
+      outline: 3px solid #b87836;
+      outline-offset: 5px;
+    }
+    @media (max-width: 600px) {
+      .values { grid-template-columns: 1fr; }
+      .hero { padding: 36px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>순천매산고</strong>
+    <a href="#about">학교 알아보기 ↓</a>
+  </header>
+
+  <main>
+    <div class="hero">
+      <p class="label">순천매산고등학교 · 비공식 소개</p>
+      <h1>오래된 배움 위에,<br>새로운 내일을.</h1>
+      <p>
+        순천 매곡동에 자리한 순천매산고등학교.<br>
+        한 세기를 이어온 학교의 이야기를 만나보세요.
+      </p>
+      <a class="button" href="https://maesan.hs.jne.kr/">
+        공식 홈페이지 방문 ↗
+      </a>
+    </div>
+
+    <section id="about">
+      <h2>학교 소개</h2>
+      <p>
+        순천매산고등학교는 순천시 매곡동에 있는
+        사립 남자 고등학교입니다.
+        기독교 교육에서 출발한 역사와 함께
+        신애·지성·자치라는 교훈을 전해오고 있습니다.
+      </p>
+      <div class="values">
+        <div class="value">
+          <h3>신애</h3>
+          <p>믿음과 사랑으로 이웃을 생각하는 마음.</p>
+        </div>
+        <div class="value">
+          <h3>지성</h3>
+          <p>정직하고 성실하게 자신을 가꾸는 자세.</p>
+        </div>
+        <div class="value">
+          <h3>자치</h3>
+          <p>서로 협력하며 책임을 다하는 태도.</p>
+        </div>
+      </div>
+      <p class="label">교훈의 설명은 이해하기 쉽게 풀어 쓴 내용입니다.</p>
+    </section>
+
+    <section>
+      <h2>학교의 발자취</h2>
+      <ul>
+        <li><strong>1910년</strong> — 학교의 전신에서 교육 시작</li>
+        <li><strong>1921년</strong> — 매산학교로 재개교</li>
+        <li><strong>1950년</strong> — 중학교와 고등학교로 분리·개편</li>
+        <li><strong>1956년</strong> — 순천매산고등학교로 교명 변경</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>찾아보기</h2>
+      <p>주소: 순천시 영동길 58 (매곡동)</p>
+      <p>대표전화: <a href="tel:0617500111">061-750-0111</a></p>
+      <a class="button"
+         href="https://map.naver.com/p/search/순천매산고등학교">
+        지도에서 보기 ↗
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      학교와 별도로 제작한 비공식 소개 페이지입니다.<br>
+      최신 공지와 입학 안내는 학교 공식 홈페이지를 확인하세요.
+    </p>
+    <p>
+      정보 출처:
+      <a href="https://encykorea.aks.ac.kr/Article/E0031977">
+        한국민족문화대백과사전
+      </a>
+      ·
+      <a href="https://www.hischool.go.kr/school/view.do?idx=1927">
+        고입정보포털
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
